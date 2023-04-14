@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "d3e90d36e9359c0e55776101547af60b46f1ee51e0c6008c3e45e008bec677bd"
+build_start_time: [1681505888, 730055000]
+build_end_time: [1681505888, 785020000]
+inputs:
+  "/Users/charu/Documents/GitHub/Invoice-Generator/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1681505870, 593770327]
+  "/Users/charu/Documents/GitHub/Invoice-Generator/macos/Runner/AppDelegate.swift": !private [1671141040, 0]
+  "/Users/charu/Documents/GitHub/Invoice-Generator/macos/Runner/MainFlutterWindow.swift": !private [1671141040, 0]
