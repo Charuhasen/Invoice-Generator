@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:invoice_generator/pages/home_page.dart';
 import '../constants.dart' as constants;
 
 class LoginPage extends StatefulWidget {
@@ -58,8 +60,9 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 //Perform Validation
                 loginValidation(
-                    usernameController.text, passwordController.text);
-                //Navigate to next home page
+                  usernameController.text,
+                  passwordController.text,
+                );
               },
             )
           ],
@@ -70,9 +73,39 @@ class _LoginPageState extends State<LoginPage> {
 
   void loginValidation(String userName, String password) {
     if (userName.isEmpty && password.isEmpty) {
-      debugPrint("Enter a username and password");
+      _showMyDialog("Error", "Please enter a Username and Password");
     } else if (userName == "admin" && password == "password") {
-      debugPrint("SUCCESS");
+      //Navigate to Home Page
+      Get.to(const HomePage());
+    } else {
+      _showMyDialog("Error", "Incorrect username and password");
     }
+  }
+
+  Future<void> _showMyDialog(String title, String message) async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(title),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(message),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 }
