@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:invoice_generator/pages/create_invoice.dart';
+import 'package:invoice_generator/pages/login.dart';
 import 'package:invoice_generator/pages/settings_page.dart';
 import '../constants.dart' as constants;
 import 'package:flutter/material.dart';
@@ -34,14 +36,20 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: const Text('Logout'),
               onTap: () {
-                // Update the state of the app.
+                Get.offAll(const LoginPage());
               },
             ),
           ],
         ),
       ),
       body: Container(
-        child: Text("HomePage"),
+        child: const Text("HomePage"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          Get.to(const CreateInvoice());
+        },
       ),
     );
   }
