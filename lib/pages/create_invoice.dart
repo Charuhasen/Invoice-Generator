@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:invoice_generator/file_handling/generate_file.dart';
 
 class CreateInvoice extends StatefulWidget {
   const CreateInvoice({super.key});
@@ -458,7 +459,9 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 height: 30,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  GenerateFile().generateFile();
+                },
                 child: const Text("Generate"),
               )
             ],
