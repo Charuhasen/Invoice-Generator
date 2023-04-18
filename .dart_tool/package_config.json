@@ -32,18 +32,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "barcode",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/barcode-2.2.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "bidi",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/bidi-2.0.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -150,6 +138,12 @@
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/dart_style-2.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "docx_template",
+      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/docx_template-0.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
     },
     {
       "name": "fake_async",
@@ -266,12 +260,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "image",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/image-4.0.15",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
       "name": "io",
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
@@ -338,12 +326,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "path_parsing",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/path_parsing-1.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "path_provider",
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/path_provider-2.0.14",
       "packageUri": "lib/",
@@ -378,12 +360,6 @@
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/path_provider_windows-2.1.5",
       "packageUri": "lib/",
       "languageVersion": "2.17"
-    },
-    {
-      "name": "pdf",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/pdf-3.10.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.18"
     },
     {
       "name": "petitparser",
@@ -432,12 +408,6 @@
       "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
-    },
-    {
-      "name": "qr",
-      "rootUri": "file:///Users/charu/.pub-cache/hosted/pub.dev/qr-3.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.16"
     },
     {
       "name": "shelf",
@@ -572,7 +542,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-17T11:30:17.703669Z",
+  "generated": "2023-04-17T13:36:36.352809Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }
